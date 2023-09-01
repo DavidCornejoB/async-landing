@@ -4,7 +4,15 @@ const miDescripcion = document.getElementById("miDescripcion");
 const imgCanal = document.getElementById("imgCanal");
 const content = null || document.getElementById("content");
 
-miDescripcion.innerHTML = "Mi nombre es David Cornejo B. Soy Ingeniero en Ciencias de la Computación, y éste proyecto se trata de una landing page que utiliza las características Asíncronas de JavaScript";
+miDescripcion.innerHTML = `
+<br />
+<br />
+Mi nombre es David Cornejo B, Ingeniero en Ciencias de la Computación.
+<br />
+<br />
+
+Éste proyecto se trata de una landing page que utiliza las características Asíncronas de JavaScript 
+mientras se consume la API de Youtube para traer información de mi canal: Nombre de usuario, Foto de perfil, Últimos videos subidos, etc.`;
 
 // PARA OBTENER LOS DETALLES DEL CANAL DE YOUTUBE:
 const URLAPIDETAILS = 'https://youtube-v31.p.rapidapi.com/channels?part=snippet%2Cstatistics&id=UC5UMHwor07bkOxThNvrv4xg';
